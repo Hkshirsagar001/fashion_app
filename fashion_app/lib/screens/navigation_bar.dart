@@ -1,7 +1,9 @@
 
+import 'package:fashion_app/screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'catalog_screen.dart';
+import 'checkout_screen.dart';
 
 class NavigationBarScreen extends StatefulWidget {
   const NavigationBarScreen({super.key});
@@ -17,8 +19,8 @@ class _NavigationBarScreenState extends State<NavigationBarScreen> {
   static const List<Widget> _screens = <Widget>[
     Catalog(), 
     Center(child: Text('Search Screen', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
-    Center(child: Text('Cart Screen', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
-    Center(child: Text('Settings Screen', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
+    CartScreen(), 
+   CheckoutScreen(),
   ];
 
   void _onItemTapped(int index) {
